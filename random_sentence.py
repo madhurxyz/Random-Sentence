@@ -9,8 +9,9 @@ def random_sentence(number):
     for index in range(0, number):
         rand_index = random.randint(0, length)
         word_list.append(lines[rand_index])
-    print word_list
-    return word_list
-
+        sentence = ' '.join(word_list) + "."
+    print sentence
+    return sentence
+    
 if __name__ == '__main__':
     random_sentence(5)
