@@ -1,6 +1,6 @@
 import random
 
-def random_sentence(number):
+def random_sentence():
     f = open("/usr/share/dict/words")
     l = f.readlines()
     lines = [s.strip('\n') for s in l]
