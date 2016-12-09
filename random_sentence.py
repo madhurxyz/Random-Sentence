@@ -1,4 +1,5 @@
 import random
+import sys
 
 def random_sentence(number):
     f = open("/usr/share/dict/words")
@@ -12,6 +13,7 @@ def random_sentence(number):
         sentence = ' '.join(word_list) + "."
     print sentence
     return sentence
-    
+
 if __name__ == '__main__':
-    random_sentence(5)
+    num_of_words = int(sys.argv[1])
+    sentence = random_sentence(num_of_words)
